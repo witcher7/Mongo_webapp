@@ -1,0 +1,66 @@
+# print("Hello world!")
+# # |        |
+# # |      is the task that we want to give to our computer 
+# # |
+# # print(is the command that we are telling to our computer)
+
+# print("Mickey mouse clubhouse")
+
+
+# # THERE ARE TYPES OF DATA
+# 1. --> INTEGERS --> the numbers from -ve infinity to +ve infinity
+#  ---> -17, 100, 20, 25,-10 etc .. integers
+
+# print(type(35))
+      #  | 
+      # type will help you in getting know about type of
+
+# 2. STRINGs --> we include alphabets, characters, symbols 
+#  ---> Echelon@, Tokyo12$, Rish, 
+# # we represent string by " " / ' '
+
+# 3. FLOATS ---> integers with decimals
+     # ---> -17.8, 10.00, 09.90, -4.56 etc
+
+# 4. Boolean types --> we say either True or False
+#     # TRUE, FALSE
+
+
+print(type(("Tokyo54$")))
+print(type(45.56))
+print(type(True))
+
+
+# VARIABLES ---> are storage buckets which we store our data 
+
+cookies = 100
+# cookies is the name of the storage bucket and 100 is the value
+# which is being stored in the bucket
+print(cookies)
+
+
+# THERE ARE CERTAIN RULES FOR WRITING VARIABLES
+
+# 1. VARIABLES CAN BE START WITH ANY Name
+
+# cookies 
+# Cookies
+# Milk 
+# harry12
+# winning3$ 
+
+# 2. It can not start with numbers
+
+# X 34cookies 
+# X 45yoghurt
+# X $check
+
+# 3. VARIABLES CAN BE START FROM _ underscore
+
+# _myname
+# _ronaldo
+# _USA
+
+# SOFTWARE ENGINEER< DEVOPS< CLOUD ENGINEER
+# PYTHON --> INTERMEDIATE
+         --> NUMPY< PANDAS < MAtplotlib
