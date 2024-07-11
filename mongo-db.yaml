@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-dep
+spec:
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - name: mongodb-ctr
+        image: mongo
+        ports:
+        - containerPort: 27017
+
+-----------------------
+SERVICE
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-app-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+  - port: 27017
+    targetPort: 27017
+
+
+# we will use cluster ip type of service for our
+# mongodb 
+# we dont want anyone outside the cluster to accesss
+# our important database
+# if you write or not , by default this service
+# will be cluster ip
