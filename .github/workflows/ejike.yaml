@@ -1,6 +1,6 @@
 name: random-workflow
 on: 
-   workflow_dispatch
+   push
 env:
   MARKET: "COSTCO"
   NUMBER: 7
