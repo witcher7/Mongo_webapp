@@ -1,22 +1,11 @@
-name: massage
-on: [push]
+name: random-workflow
+on: 
+   workflow_dispatch
 jobs:
-  head-massage:
-    runs-on: ubuntu-lastest
-    steps:
-      - name: Oiling
-        run: echo "Ejike get ready for oiling in thailand"
-      - name: shaking head
-        run: echo "Shake the head and relax"
-  body-massage:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Oiling
-         run: echo "Ejike get ready for oiling in thailand BODY TIME!!"
-       - name: Back massage
-         run: echo "Just relax and feel the nerves"
-       - name: Feet massage
-         run: echo "Droping oil on feets so that your ankle nerves get repaired"
-         
+    hello-job:
+         runs-on: ubuntu-latest
+         steps:
+           - name: Print Hello
+             run: echo "Hello"
     # runners --> windows, macos , ubuntu
   
