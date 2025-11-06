@@ -9,8 +9,8 @@ jobs:
          runs-on: ubuntu-latest
          steps:
           - name: Download the code
-          - uses: actions/checkout@v5
-          - name: Let's check if we have downloaded the code or not
+            uses: actions/checkout@v5
+          - name: "Let's check if we have downloaded the code or not"
             run: ls 
               
          
