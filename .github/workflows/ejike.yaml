@@ -8,12 +8,10 @@ jobs:
     hello-job:
          runs-on: ubuntu-latest
          steps:
-           - name: Print Hello
-             run: echo "Hello"
-           - name: Printing Variables
-             run: |
-              echo "$MARKET"
-              echo "$NUMBER"
+          - name: Download the code
+          - uses: actions/checkout@v5
+          - name: Let's check if we have downloaded the code or not
+            run: ls 
               
          
     # runners --> windows, macos , ubuntu
